@@ -28,6 +28,7 @@ Looking at the diagram from right to left:
 # License
 
 ```
+Copyright 2017 Joielechong.
 Copyright 2015 Ribot Ltd.
 
 Licensed under the Apache License, Version 2.0 (the "License");
