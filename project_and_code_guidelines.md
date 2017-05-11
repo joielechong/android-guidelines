@@ -533,7 +533,7 @@ This is good:
 
 ```xml
 <TextView
-	android:id="@+id/text_view_profile"
+	android:id="@+id/profile_tv"
 	android:layout_width="wrap_content"
 	android:layout_height="wrap_content" />
 ```
@@ -543,7 +543,7 @@ This is __bad__ :
 ```xml
 <!-- Don\'t do this! -->
 <TextView
-    android:id="@+id/text_view_profile"
+    android:id="@+id/profile_tv"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content" >
 </TextView>
@@ -556,21 +556,22 @@ Resource IDs and names are written in __lowercase_underscore__.
 
 #### 2.3.2.1 ID naming
 
-IDs should be prefixed with the name of the element in lowercase underscore. For example:
+IDs should be suffixed with the name of the element in lowercase underscore. This naming convention will make a more maintainable project wih large collection of layouts. For example:
 
 
-| Element            | Prefix            |
+| Element            | Suffix            |
 | -----------------  | ----------------- |
-| `TextView`           | `text_`             |
-| `ImageView`          | `image_`            |
-| `Button`             | `button_`           |
-| `Menu`               | `menu_`             |
+| `TextView`           | `_tv`             |
+| `ImageView`          | `_imv`            |
+| `Button`             | `_btn`           |
+| `Menu`               | `_menu`             |
 
+For View with name more than 4 characters, the suffix should be made to 3 characters. For View with name 4 or smaller characters, use the name for the suffix.
 Image view example:
 
 ```xml
 <ImageView
-    android:id="@+id/image_profile"
+    android:id="@+id/profile_imv"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content" />
 ```
@@ -580,7 +581,7 @@ Menu example:
 ```xml
 <menu>
 	<item
-        android:id="@+id/menu_done"
+        android:id="@+id/done_menu"
         android:title="Done" />
 </menu>
 ```
@@ -643,6 +644,8 @@ onView(withId(R.id.view))
 # License
 
 ```
+Copyright 2017 Joielechong
+
 Copyright 2015 Ribot Ltd.
 
 Licensed under the Apache License, Version 2.0 (the "License");
