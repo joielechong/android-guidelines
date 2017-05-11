@@ -565,6 +565,8 @@ IDs should be suffixed with the name of the element in lowercase underscore. Thi
 | `ImageView`          | `_imv`            |
 | `Button`             | `_btn`           |
 | `Menu`               | `_menu`             |
+| `LinearLayout`	| `_lly`	|
+| `RelativeLayout`	| `_rly`	|
 
 For View with name more than 4 characters, the suffix should be made to 3 characters. For View with name 4 or smaller characters, use the name for the suffix.
 Image view example:
