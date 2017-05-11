@@ -153,6 +153,25 @@ public class MyClass {
 }
 ```
 
+### 2.2.2 Use abbreviation name for View
+
+View should use abbreviation name with 3 characters if name is more than 4 characters length or use the name directly if view name is less or equal with 4 characters. It must be in the __abvViewPurpose__ format. Then naming convention should follow ### 2.2.1
+
+Example:
+
+```java
+public class MyClass {
+    private Button mBtnClose;
+    protected ImageView mImvBackground;
+    private Menu mMenuAbout;
+    
+    private void someMethod() {
+        Button btnNext;
+	ImageView imvPreview;
+    }
+}
+```
+
 ### 2.2.3 Treat acronyms as words
 
 | Good           | Bad            |
