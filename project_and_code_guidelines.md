@@ -79,6 +79,31 @@ A good practice is to not include the word `menu` as part of the name because th
 
 Resource files in the values folder should be __plural__, e.g. `strings.xml`, `styles.xml`, `colors.xml`, `dimens.xml`, `attrs.xml`
 
+#### 1.2.2.5 Color naming
+1. Resource colors naming must be descriptive, avoid naming which doesn't tell what the color. __Except__ for default color from support library. You can use [Web colors](https://en.wikipedia.org/wiki/Web_colors) as the guide.
+2. Always use camel case with `color` prefix. E.g: colorWhite, colorPurple.
+
+This is good:
+
+```html
+<!-- support library color -->
+<color name="colorPrimary">#ff2800</color>
+<color name="colorPrimaryDark">#e72b08</color>
+<color name="colorPrimaryLight">#FFCDD2</color>
+
+<!-- descriptive color name -->
+<color name="colorSilver">#C0C0C0</color>
+<color name="colorOlive">#808000</color>
+```
+
+This is bad:
+
+```html
+<color name="colorButton">#C0C0C0</color>
+<color name="cardViewBackground">#808000</color>
+<color name="colorwhite">#ffffff</color>       <!-- Not camel case!! -->
+```
+
 # 2 Code guidelines
 
 ## 2.1 Java language rules
